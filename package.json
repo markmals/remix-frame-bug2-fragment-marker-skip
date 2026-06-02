@@ -1,0 +1,15 @@
+{
+    "name": "remix-frame-bug2-fragment-marker-skip",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "NODE_ENV=development node --import remix/node-tsx server.ts",
+        "start": "node --import remix/node-tsx server.ts"
+    },
+    "dependencies": {
+        "remix": "github:remix-run/remix#preview/main&path:packages/remix"
+    },
+    "devDependencies": {
+        "@types/node": "^25.6.0"
+    }
+}

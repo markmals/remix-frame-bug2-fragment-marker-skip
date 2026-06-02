@@ -1,0 +1,8 @@
+# preview/main ships every @remix-run/* subpackage as a git dependency, which
+# pnpm 11 blocks by default. Allow exotic (git) subdeps so the install resolves.
+blockExoticSubdeps: false
+# The git-hosted `remix` package declares a `prepack` (README sync) script that
+# pnpm 11 gates behind allowBuilds. It only mirrors READMEs (no compilation) and
+# runs against the full repo clone, so allow it.
+allowBuilds:
+  remix: true
